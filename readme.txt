@@ -2,14 +2,16 @@
 Projet assisté : 
 Cours : Element de programmation 
 langage : c++ 
-Par : David Verrhy Durcin NDIMINA
+Par : David Verrhy Durcin NDIMINA(NDID25010407), Mamadou Siradiou Baldé (BALM16089700)
 ===============================================================================================================================
 # comment excuter le projet ? 
+
 la commande suivante permet d'excuter tous les fichier.cpp du documemt. 
 g++ projet.cpp geoExploration.cpp geoQuiz.cpp -o projet 
  ./ projet ===> excute le fichier.cpp du main 
-# Ce fichier README.txt, est la sommation de des explications de tout ce que j'ai fait et pourquoi je l'ai fait comme ça dans mon code.
 
+
+# Ce fichier README.txt, est la sommation de des explications de tout ce que j'ai fait et pourquoi je l'ai fait comme ça dans mon code.
 # etape 1: Le menu
 
 Ce qu'il faut faire, c'est de cree une fonction menu qui renvoie le choix de l'utilisateur comprenant des options. 
@@ -84,3 +86,27 @@ d'y ajouter de nouvelle fonction ensuite importer la fonction geoExploration dan
 introduction afin de me simplifier la lecture de mon code 
 
 # etape 5: gestion des problemes 
+
+- Dans geoExploration,dans la fonction convertisseur, nous avons implanter deux gestions de problemes conforme a ce que nous avons appris en classe.
+* try, le try a ete ajoute afin de prevenir toute eventuealité de mauvaise devise. a la place de exception, on a utilise runtime_error.
+ensuite le try catch a ete fait dans le main(). Protection du bloc a excuté encadre dans le try et l'erreur est rattrape par le bloc catch{}
+
+- Dans la fonction voyager, on a ajouter une gestion de problemes avec une porte logique OU(||) qui empeche d'avoir un nombre d'etape inferieur a 1 ou superieur a 9
+
+# etape 6,7: ensemble 
+Dans ces etsps liees, on doit maintenant rendre interactive la case: 'z'. 
+
+Comme pour l'etape 'e', J'utilise ma variable Profil qui est liee a ma structure profil. ==> geoQuiz(Progil);
+Ensuite, on a copié et commenter le code que le prof a propose pour l'etape 7. 
+
+# Etape 8: gestion des questions 
+realiser avec deux fonctions bien distincte mais qui se completent et qui permettent l'excution de cette partie 
+Question& chargerQuestionDepuisTableau(Question* questions, int index); // retourne la qestion charger a une certaine index de notre tableau 
+void afficherQuestion(const Question& question) // sortir la question avec les reponses (pays et capitales) 
+Aussi, boucle on a utilise une boucle for pour montrer a l'utilisateur les differents choix de reponse qu'il a. 
+
+# etape 9 : choix et validation de la reponse de l'utilisateur
+int poserQuestionEtCalculerPoints(const Question& question) // fonction qui permet de poser la question et de calculer les points 
+on a utilise une fonction int() afin de pouvoir renvoyer la bonne reponse, attribue ou retirer le point a l'utilisateur. 
+Une structure conditionnelle a ete utilisee. 
+
