@@ -53,7 +53,7 @@ int main()
     profil Profil;
 
     // afficher les membres de l'equipe 
-    cout <<"--Membre de l'equipe : David NDIMINA--"<<endl;
+    cout <<"--Membre de l'equipe : David NDIMINA ,Mamadou Siradiou Baldé--"<<endl;
 
     // corps du code 
     menu selection [4] = {
