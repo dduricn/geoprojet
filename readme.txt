@@ -105,13 +105,13 @@ Question& chargerQuestionDepuisTableau(Question* questions, int index); // retou
 void afficherQuestion(const Question& question) // sortir la question avec les reponses (pays et capitales) 
 Aussi, boucle on a utilise une boucle for pour montrer a l'utilisateur les differents choix de reponse qu'il a. 
 
-# etape 9 : choix et validation de la reponse de l'utilisateur
+# etape 9 : choix et validation de la réponse de l'utilisateur
 int poserQuestionEtCalculerPoints(const Question& question) // fonction qui permet de poser la question et de calculer les points 
 on a utilise une fonction int() afin de pouvoir renvoyer la bonne reponse, attribue ou retirer le point a l'utilisateur. 
 Une structure conditionnelle a ete utilisee. 
 
 # Lien github: 
-Je sais qu'il n y a pas de point pour le depot github, mais on s'est dit que peut etre, par le grand pure des hasard en avoir. 
+Je sais qu'il n y a pas de point pour le dépôt github, mais on s'est dit que peut etre, par le grand pure des hasard en avoir. 
 Notre github est assez structuré. 
 https://github.com/dduricn/geoprojet.git 
 
