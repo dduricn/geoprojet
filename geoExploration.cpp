@@ -60,7 +60,8 @@ void voyager (string *voyage, int etapes, int position)
 
     // faire ceci autant de fois que la position dans le tableau n'est pas egale aux etapes du voyages 
     cout << " Etapes # : "<< position +1 << " du voyage"<<endl;
-    cout <<"-> Nom de la  destination : "; cin>>voyage[position]; /* ->voyages[postion], permet de stocker une destination une certaine position dans le tableau*/
+    cout <<"-> Nom de la  destination : "; 
+    cin>>voyage[position]; /* ->voyages[postion], permet de stocker une destination une certaine position dans le tableau*/
 
     // la fonction qui sera utiliser dans geoExportation 
     voyager(voyage, etapes, position +1); // stockage complet du voyage: destination, etape, et position dans le tableau
@@ -86,6 +87,7 @@ void geoExploration (profil &profil_utilisateur)
     // tableau a taille dynamique crée a l'aide du pointeur *voyage et appel de cette derniere 
     string *voyage = new string[etapes]; 
     voyager(voyage, etapes);
+    
     // boucle d'affichage du resumer du votage
     cout <<"*******************************"<<endl;
     for (int i=0; i<etapes; i++)

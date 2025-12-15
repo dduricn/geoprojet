@@ -87,9 +87,7 @@ int main()
                 break;
 
             case 'i':
-            
                 cout << "« Bienvenue dans les GeoInformations ! »" << endl;
-
                 try {
                 cout <<"\nVoici les conversions:"<<endl;
                 cout << "100$ CAD ==> USD : "<< convertisseur (100,"usd")<<"$ USD"<<endl;
@@ -103,7 +101,6 @@ int main()
             catch (const exception& e) {
                 cout << "==> Une erreur a ete dectecte lors de la conversion, pas le bon format de devise"<< endl;
             }
-            
                 break;
             case 'q':
                 cout << "« L’utilisateur quitte. »" << endl;
